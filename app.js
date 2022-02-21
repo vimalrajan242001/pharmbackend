@@ -105,7 +105,9 @@ app.use((req, res, next) => {
 //     res.status(200).json({ message: 'Supplier deleted!' });
 //   });
 // });
-
+app.get("/", (req, res) => {
+    res.send("sda");
+});
 app.use("/api/supplier", supplierRoutes);
 app.use("/api/inventory", inventoryRoutes);
 app.use("/api/user", userRoutes);
