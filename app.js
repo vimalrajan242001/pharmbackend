@@ -113,6 +113,7 @@ app.use("/api/sales", salesRoutes);
 app.use("/api/doctorUser", doctorUserRoutes);
 app.use("/api/doctorOder", doctorOderRoutes);
 app.use("/api/verifiedDoctorOder", verifiedDoctorOderRoutes);
+
 app.use("/api/pickedUpOders", pickedUpOdersRoutes);
 
 module.exports = app;
