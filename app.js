@@ -80,14 +80,14 @@ app.use((req, res, next) => {
 //   });
 // });
 
-// app.get("/api/supplier",(req,res,next)=>{
-//   Supplier.find().then(documents=>{
-//     res.status(200).json({
-//       message : 'supplier added sucessfully',
-//       suppliers :documents
-//     });
-//   });
-// });
+app.get("/api/supplier", (req, res, next) => {
+    Supplier.find().then((documents) => {
+        res.status(200).json({
+            message: "supplier added sucessfully",
+            suppliers: documents,
+        });
+    });
+});
 
 // app.get("/api/supplier/:id",(req,res,next)=>{
 //   Supplier.findById(req.params.id).then(supplier =>{
